@@ -27,7 +27,6 @@ def ask_input():
     import random
     word_list = ['orange', 'apple', 'mango', 'melon', 'pear']
     word = random.choice(word_list)
-    print(word)
     
     while True:
         guess = input('Guess a single alphabetical letter: ')
