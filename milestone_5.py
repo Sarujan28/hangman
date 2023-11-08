@@ -60,4 +60,3 @@ class Hangman:
             else:
                 print(f'You have won the game. The word was {self.word}')
                 break
-        
