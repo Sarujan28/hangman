@@ -22,6 +22,11 @@ class Hangman:
         lower_guess = guess.lower()
         if lower_guess in self.word:
             print(f'Good guess! {lower_guess} is in the word.')
+             # Adding correct guesses to word being guessed and reducing number of letters needing to be found
+            for letter in self.word:
+                if letter == lower_guess:
+                    self.word_guessed[self.word.index(lower_guess)] = lower_guess
+            self.num_letters -= 1
         else:
             print(f'Sorry, {lower_guess} is not in the word. Try again.')
 # Ask input method
