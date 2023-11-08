@@ -24,3 +24,14 @@ class Hangman:
             print(f'Good guess! {lower_guess} is in the word.')
         else:
             print(f'Sorry, {lower_guess} is not in the word. Try again.')
+# Ask input method
+    def ask_input(self):
+        while True:
+            guess = input('Guess a single alphabetical letter: ')
+            if len(guess) != 1 and guess.isalpha() != True:
+                print('Invalid letter. Please, enter a single alphabetical character.')
+            elif guess in self.list_of_guesses:
+                print('You already tried that letter!')
+            else:
+                self.check_guess(guess)
+                self.list_of_guesses.append(guess)
