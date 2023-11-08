@@ -28,7 +28,9 @@ class Hangman:
                     self.word_guessed[self.word.index(lower_guess)] = lower_guess
             self.num_letters -= 1
         else:
+            self.num_lives -= 1 # type: ignore # Reducing number of lives for every wrong guess
             print(f'Sorry, {lower_guess} is not in the word. Try again.')
+            print(f'You have {self.num_lives} lives left.')
 # Ask input method
     def ask_input(self):
         while True:
