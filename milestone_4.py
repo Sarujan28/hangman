@@ -17,3 +17,10 @@ class Hangman:
         self.num_letters = num_letters
         list_of_guesses = []
         self.list_of_guesses = list_of_guesses
+# Check guess method
+    def check_guess(self, guess):
+        lower_guess = guess.lower()
+        if lower_guess in self.word:
+            print(f'Good guess! {lower_guess} is in the word.')
+        else:
+            print(f'Sorry, {lower_guess} is not in the word. Try again.')
