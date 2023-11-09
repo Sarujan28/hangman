@@ -53,10 +53,9 @@ Instead of the play game method being added, the conditions for ending the game 
 ## Usage Instructions
 
 The repository can be moved to the users computer using git clone with the URL for the remote repository.
+In the milestone_5.py file, a list of words can created by the user assigned to a variable from which the computer picks a random word. Afterwards, a instance of the Hangman game can be created from the Hangman class. The variable assigned with a list of words is passed through as a parameter for the instance of the Hangman class. To play a new game call the play game method.
 
-Once the user has a local repository for the Hangman game, milestone_5.py can be imported to a python file.
-
-In the python file, a list of words can created by the user assigned to a variable from which the computer picks a random word. Afterwards, a instance of the Hangman game can be created from the Hangman class. The variable assigned with a list of words is passed through as a parameter for the instance of the Hangman class. To play a new game call the play game method.
+![usage_instructions](image-3.png)
 
 ## File structure of project
 
@@ -85,3 +84,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
+[def]: image-1.png
